@@ -25,13 +25,13 @@ export class App extends React.Component<any, {remaining: string}> {
             return "VICTORYYYYYYYYYYYYY";
         } else {
             const duration = moment.duration(monitorama.diff(now));
-            return `${duration.days()} days ${duration.hours()} hours ${duration.minutes()} minutes ${duration.seconds()} seconds`;
+            return `${duration.months()} months ${duration.days()} days ${duration.hours()} hours ${duration.minutes()} minutes ${duration.seconds()} seconds`;
         }
     }
     public render() {
         return(
             <div>
-                <h4 style={{textAlign: "center", marginTop: "30vh", fontFamily: "Arial, sans-serif", fontWeight: "bold", fontSize: "80px"}}>{this.state.remaining}</h4>
+                <h4 style={{textAlign: "center", marginTop: "30vh", fontFamily: "Arial, sans-serif", fontWeight: "bold", fontSize: "70px"}}>{this.state.remaining}</h4>
             </div>
         );
     }
