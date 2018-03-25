@@ -1,0 +1,30 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --output-public-path=dist --history-api-fallback",
+    "build": "npm run lint && webpack --mode production",
+    "compile": "npm run build",
+    "lint": "tslint --project ./tsconfig.json src/**/*.ts src/**/*.tsx"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/react": "^16.0.41",
+    "@types/react-dom": "^16.0.4",
+    "awesome-typescript-loader": "^4.0.1",
+    "css-loader": "^0.28.11",
+    "moment": "^2.21.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "source-map-loader": "^0.2.3",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}
